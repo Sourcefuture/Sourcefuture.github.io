@@ -172,12 +172,22 @@
     }
 
     .link-card i {
-        font-size: 1.75rem;
+        font-size: 1.25rem;
+        margin: 4px 0px;
+    }
+
+    i.iconfont.icon-a-daohangzhiyindingwei-05,
+    i.iconfont.icon-z_shangpinheji {
+        font-size: 1.65rem;
     }
 
     span.link-name {
         display: block !important;
         font-size: 0.85rem;
+    }
+
+    .link-card:hover span.link-name {
+        font-size: 0.95rem;
     }
 
     span.line-text,
@@ -242,9 +252,20 @@
 
 }
 
+/*小于512px时*/
+@media (max-width: 512px) {
+    #made {
+        display: none;
+    }
+}
+
 /*小于390px时*/
 @media (max-width: 390px) {
     .main-img img {
+        display: none;
+    }
+
+    #beian {
         display: none;
     }
 }
