@@ -58,6 +58,7 @@ const ap = new APlayer({
         {
             name: "Turn All the Lights On",
             artist: "T-Pain、Ne-Yo",
+            lrc: "https://s-sh-2127-music.oss.dogecdn.com/lrc%2FOwl%20City-The%20Saltwater%20Room.lrc",
             url: "http://101.201.81.237:5244/d/Onedrive_Workstation/Music/Music/%E7%89%B9%E6%AE%8A/Turn%20All%20the%20Lights%20On%20-%20T-Pain%E3%80%81Ne-Yo.flac?sign=aQNdFUGhPPlt6E8PB4pxNsMbrZ-W16dE6Z7sp5M31Tk=:0",
             theme: "#0057a7"
         },
