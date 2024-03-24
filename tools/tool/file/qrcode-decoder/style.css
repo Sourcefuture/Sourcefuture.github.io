@@ -1,0 +1,77 @@
+body{
+    margin: 0px;
+    background-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+*{
+    text-transform: capitalize;
+    transition: margin, height all 1s;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.pass, .data{
+    text-transform: none;
+}
+header img{
+    width: 100px;
+    height: 100px;
+    
+}
+
+span::before{
+    content: "Data: ";
+}
+.pass::before{
+    content: "Password: ";
+}
+
+.pass{
+    background-color: rgb(225, 202, 202);    
+}
+
+header{
+    background-color: rgb(90, 1, 145);
+    color: #fff;
+    text-align: center;
+}
+button{
+    background-color: blueviolet;
+    padding: 10px;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #fff;
+}
+
+
+img{
+    border-radius: 10px;
+    margin-top: 1em;
+    border: 1px solid rgb(255, 255, 255);
+    object-fit: contain;
+    margin-right: 1em;
+}
+
+.container{
+   margin: 0px 20px;
+   padding: 30px 0px;
+   /* height: 100vh; */
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(90, 1, 145);
+    padding: 70px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+}
