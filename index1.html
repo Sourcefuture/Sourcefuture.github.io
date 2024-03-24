@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 导入阿里的图标样式文件 -->
+    <link rel="stylesheet" href="iconfont.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="toolkit.css">
+    <style>
+        .content {
+            display: flex;
+            /* 使用flex布局 */
+            /* justify-content: space-between; */
+            /* 左右排列，并将左右两边的空间平均分配 */
+            /* align-items: flex-start; */
+            /* 垂直方向上顶部对齐 */
+        }
+
+        .lower-right-corner {
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+        }
+
+        #main-content {
+            position: relative;
+            left: 125px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="menu-box">
+            <!-- 展示与隐藏侧边栏 开始-->
+            <!-- <input type="checkbox" id="menu-btn">
+            <label for="menu-btn"><i class="iconfont icon-yemianfanhui"></i></label> -->
+            <!-- 展示与隐藏侧边栏 结束-->
+            <div class="menu">
+                <!-- 侧边栏的标题 开始-->
+                <div class="menu-title">
+                    <h1>工具箱</h1>
+                </div>
+                <!-- 侧边栏的标题 结束-->
+
+                <!-- 每一项导航 -->
+                <div class="menu-item">
+                    <input type="checkbox" id="menu-item1">
+                    <label for="menu-item1">
+                        <i class="menu-item-icon iconfont icon-a-01-shujuzhongxin"></i>
+                        <span>navigation1</span>
+                        <i class="menu-item-last iconfont icon-down"></i>
+                    </label>
+                    <div class="menu-content">
+                        <span class="option" data-content="content1">option1</span>
+                        <span>option2</span>
+                        <span>option3</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <input type="checkbox" id="menu-item2">
+                    <label for="menu-item2">
+                        <i class="menu-item-icon iconfont icon-a-02-kechengguanli"></i>
+                        <span>navigation2</span>
+                        <i class="menu-item-last iconfont icon-down"></i>
+                    </label>
+                    <div class="menu-content">
+                        <span>option1</span>
+                        <span>option2</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <input type="checkbox" id="menu-item3">
+                    <label for="menu-item3">
+                        <i class="menu-item-icon iconfont icon-a-04-zixunfabu"></i>
+                        <span>navigation3</span>
+                        <i class="menu-item-last iconfont icon-down"></i>
+                    </label>
+                    <div class="menu-content">
+                        <span>option1</span>
+                        <span>option2</span>
+                        <span>option3</span>
+                    </div>
+                </div>
+
+                <div class="set-line"></div>
+
+                <div class="menu-item">
+                    <label>
+                        <i class="menu-item-icon iconfont icon-a-08-shezhi"></i>
+                        <span>setting</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class=lower-right-corner>
+
+            <h1>ceshi</h1>
+        </div>
+
+        <div id="main-content">
+            <div class="container">
+                <section class="section">
+                    <a name="product"></a>
+
+                    <h3 class="mk-sub-title">
+                        <span>Tools</span>
+                        <span>/</span>
+                        网页工具
+                    </h3>
+        
+                    <p class="mk-title-describe">只是一些工具罢了...</p>
+        
+                    <div class="mk-item-box">
+        
+                        <div class="mk-item">
+                            <a href="/tool/emoji/" target="_blank">
+                                <article class="mk-color-item color1">
+                                    <div class="item-logo">
+                                        <i class="fas fa-grin-tongue-wink" aria-hidden="true"></i>
+                                    </div>
+                                    <h3>Emoji 大全</h3>
+                                    <p>非常全面的 Emoji 合集</p>
+                                    <i class="light"></i>
+                                </article>
+                            </a>
+                        </div> <!-- mk-item -->
+        
+                        <div class="mk-item">
+                            <a href="/tool/baidu/" target="_blank">
+                                <article class="mk-color-item color3">
+                                    <div class="item-logo">
+                                        <i class="fas fa-search" aria-hidden="true"></i>
+                                    </div>
+                                    <h3>帮你百度</h3>
+                                    <p>让我帮你百度一下</p>
+                                    <i class="light"></i>
+                                </article>
+                            </a>
+                        </div> <!-- mk-item -->
+        
+                        <div class="mk-item">
+                            <a href="/tool/bullshit/" target="_blank">
+                                <article class="mk-color-item color6">
+                                    <div class="item-logo">
+                                        <i class="fas fa-poo" aria-hidden="true"></i>
+                                    </div>
+                                    <h3>狗屁不通生成器</h3>
+                                    <p>你写的这是什么玩意</p>
+                                    <i class="light"></i>
+                                </article>
+                            </a>
+                        </div> <!-- mk-item -->
+        
+                        <div class="mk-item">
+                            <a href="tool/screentest/" target="_blank">
+                                <article class="mk-color-item color2">
+                                    <div class="item-logo">
+                                        <i class="fas fa-desktop" aria-hidden="true"></i>
+                                    </div>
+                                    <h3>屏幕测试</h3>
+                                    <p>你的屏幕是否有缺陷呢</p>
+                                    <i class="light"></i>
+                                </article>
+                            </a>
+                        </div> <!-- mk-item -->
+        
+                        <div class="mk-item">
+                            <a href="/tool/unlock-music/" target="_blank">
+                                <article class="mk-color-item color5">
+                                    <div class="item-logo">
+                                        <i class="fas fa-waveform" aria-hidden="true"></i>
+                                    </div>
+                                    <h3>音乐解锁</h3>
+                                    <p>在线解锁会员专属音乐</p>
+                                    <i class="light"></i>
+                                </article>
+                            </a>
+                        </div> <!-- mk-item -->
+        
+                        <div class="mk-item">
+                            <a href="/tool/css-loader/" target="_blank">
+                                <article class="mk-color-item color4">
+                                    <div class="item-logo">
+                                        <i class="fad fa-spinner-third" aria-hidden="true"></i>
+                                    </div>
+                                    <h3>CSS3 加载动画</h3>
+                                    <p>一套可自定义的加载动画</p>
+                                    <i class="light"></i>
+                                </article>
+                            </a>
+                        </div> <!-- mk-item -->
+        
+                        <div class="mk-item">
+                            <a onclick="update()" target="_blank">
+                                <article class="mk-color-item color3">
+                                    <div class="item-logo">
+                                        <i class="fad fa-tools" aria-hidden="true"></i>
+                                    </div>
+                                    <h3>待添加</h3>
+                                    <p>待添加</p>
+                                    <i class="light"></i>
+                                </article>
+                            </a>
+                        </div> <!-- mk-item -->
+        
+                        <div class="mk-item">
+                            <a onclick="update()" target="_blank">
+                                <article class="mk-color-item color1">
+                                    <div class="item-logo">
+                                        <i class="fad fa-tools" aria-hidden="true"></i>
+                                    </div>
+                                    <h3>待添加</h3>
+                                    <p>待添加</p>
+                                    <i class="light"></i>
+                                </article>
+                            </a>
+                        </div> <!-- mk-item -->
+        
+                    </div> <!-- mk-item-box -->
+        
+        
+        
+        
+                    <h3 class="mk-sub-title">
+                        <span>Game</span>
+                        <span>/</span>
+                        游戏
+                    </h3>
+        
+                    <p class="mk-title-describe">玩会游戏，放松一下</p>
+        
+                    <div class="mk-item-box">
+        
+                        <div class="mk-item">
+                            <a href="/game/hacker/" target="_blank">
+                                <article class="mk-color-item color6">
+                                    <div class="item-logo">
+                                        <i class="fa fa-bug" aria-hidden="true"></i>
+                                    </div>
+                                    <h3>Hacker</h3>
+                                    <p>啊！你的电脑被黑了</p>
+                                    <i class="light"></i>
+                                </article>
+                            </a>
+                        </div> <!-- mk-item -->
+        
+                        <div class="mk-item">
+                            <a href="/game/tetris/" target="_blank">
+                                <article class="mk-color-item color5">
+                                    <div class="item-logo">
+                                        <i class="fas fa-cubes" aria-hidden="true">&#xe6c9</i>
+                                    </div>
+                                    <h3>俄罗斯方块</h3>
+                                    <p>来挑战你的最高分吧</p>
+                                    <i class="light"></i>
+                                </article>
+                            </a>
+                        </div> <!-- mk-item -->
+        
+                        <div class="mk-item">
+                            <a href="/game/chess/" target="_blank">
+                                <article class="mk-color-item color4">
+                                    <div class="item-logo">
+                                        <i class="fas fa-chess-rook-alt" aria-hidden="true"></i>
+                                    </div>
+                                    <h3>国际象棋</h3>
+                                    <p>这个 AI 不太聪明</p>
+                                    <i class="light"></i>
+                                </article>
+                            </a>
+                        </div> <!-- mk-item -->
+        
+                        <div class="mk-item">
+                            <a href="/game/2048/" target="_blank">
+                                <article class="mk-color-item color2">
+                                    <div class="item-logo">
+                                        <i class="fas fa-game-board" aria-hidden="true"></i>
+                                    </div>
+                                    <h3>2048</h3>
+                                    <p>一个经典的小游戏</p>
+                                    <i class="light"></i>
+                                </article>
+                            </a>
+                        </div> <!-- mk-item -->
+        
+                        <div class="mk-item">
+                            <a href="/game/liferestart/" target="_blank">
+                                <article class="mk-color-item color2">
+                                    <div class="item-logo">
+                                        <i class="fas fa-monitor-heart-rate aria-hidden="true"></i>
+                                    </div>
+                                    <h3>人生重开模拟器</h3>
+                                    <p>这垃圾人生我是一秒也不想呆了</p>
+                                    <i class="light"></i>
+                                </article>
+                            </a>
+                        </div> <!-- mk-item -->
+        
+                    </div> <!-- mk-item-box -->
+        
+        
+        
+                    <h3 class="mk-sub-title">
+                        <span>More</span>
+                        <span>/</span>
+                        其它
+                    </h3>
+        
+                    <p class="mk-title-describe">其余的一些好玩的东东</p>
+        
+                    <div class="mk-item-box">
+        
+                        <div class="mk-item">
+                            <a onclick="update()" target="_blank">
+                                <article class="mk-color-item color2">
+                                    <div class="item-logo">
+                                        <i class="fad fa-tools" aria-hidden="true"></i>
+                                    </div>
+                                    <h3>待添加</h3>
+                                    <p>待添加</p>
+                                    <i class="light"></i>
+                                </article>
+                            </a>
+                        </div> <!-- mk-item -->
+        
+                        <div class="mk-item">
+                            <a onclick="update()" target="_blank">
+                                <article class="mk-color-item color6">
+                                    <div class="item-logo">
+                                        <i class="fad fa-tools" aria-hidden="true"></i>
+                                    </div>
+                                    <h3>待添加</h3>
+                                    <p>待添加</p>
+                                    <i class="light"></i>
+                                </article>
+                            </a>
+                        </div> <!-- mk-item -->
+        
+                        <div class="mk-item">
+                            <a onclick="update()" target="_blank">
+                                <article class="mk-color-item color3">
+                                    <div class="item-logo">
+                                        <i class="fad fa-tools" aria-hidden="true"></i>
+                                    </div>
+                                    <h3>待添加</h3>
+                                    <p>待添加</p>
+                                    <i class="light"></i>
+                                </article>
+                            </a>
+                        </div> <!-- mk-item -->
+        
+                        <div class="mk-item">
+                            <a onclick="update()" target="_blank">
+                                <article class="mk-color-item color1">
+                                    <div class="item-logo">
+                                        <i class="fad fa-tools" aria-hidden="true"></i>
+                                    </div>
+                                    <h3>待添加</h3>
+                                    <p>待添加</p>
+                                    <i class="light"></i>
+                                </article>
+                            </a>
+                        </div> <!-- mk-item -->
+        
+                        <div class="mk-item">
+                            <a onclick="update()" target="_blank">
+                                <article class="mk-color-item color5">
+                                    <div class="item-logo">
+                                        <i class="fad fa-tools" aria-hidden="true"></i>
+                                    </div>
+                                    <h3>待添加</h3>
+                                    <p>待添加</p>
+                                    <i class="light"></i>
+                                </article>
+                            </a>
+                        </div> <!-- mk-item -->
+        
+                        <div class="mk-item">
+                            <a onclick="update()" target="_blank">
+                                <article class="mk-color-item color3">
+                                    <div class="item-logo">
+                                        <i class="fad fa-tools" aria-hidden="true"></i>
+                                    </div>
+                                    <h3>待添加</h3>
+                                    <p>待添加</p>
+                                    <i class="light"></i>
+                                </article>
+                            </a>
+                        </div> <!-- mk-item -->
+        
+                        <div class="mk-item">
+                            <a onclick="update()" target="_blank">
+                                <article class="mk-color-item color4">
+                                    <div class="item-logo">
+                                        <i class="fad fa-tools" aria-hidden="true"></i>
+                                    </div>
+                                    <h3>待添加</h3>
+                                    <p>待添加</p>
+                                    <i class="light"></i>
+                                </article>
+                            </a>
+                        </div> <!-- mk-item -->
+        
+                        <div class="mk-item">
+                            <a onclick="update()" target="_blank">
+                                <article class="mk-color-item color2">
+                                    <div class="item-logo">
+                                        <i class="fad fa-tools" aria-hidden="true"></i>
+                                    </div>
+                                    <h3>待添加</h3>
+                                    <p>待添加</p>
+                                    <i class="light"></i>
+                                </article>
+                            </a>
+                        </div> <!-- mk-item -->
+        
+        
+                    </div> <!-- mk-item-box -->
+        
+                </section> <!--  class="section" -->
+        </div>
+
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var options = document.querySelectorAll('.option');
+            options.forEach(function (option) {
+                option.addEventListener('click', function () {
+                    var contentId = option.getAttribute('data-content');
+                    // 根据不同的 contentId 更新右侧主界面的内容
+                    updateMainContent(contentId);
+                });
+            });
+
+            function updateMainContent(contentId) {
+                // 获取右侧主界面的容器
+                var mainContent = document.getElementById('main-content');
+                // 根据 contentId 更新主界面内容
+                if (contentId === 'content1') {
+                    mainContent.innerHTML = '<h2>内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1v</h2><p>这是内容1的详细信息。</p>';
+                } else if (contentId === 'content2') {
+                    mainContent.innerHTML = '<h2>内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2</h2><p>这是内容2的详细信息。</p>';
+                }
+                // 可以根据需要进一步扩展
+            }
+        });
+    </script>
+
+</body>
+
+</html>

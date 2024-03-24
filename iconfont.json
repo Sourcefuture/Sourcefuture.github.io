@@ -1,0 +1,58 @@
+{
+  "id": "4478709",
+  "name": "no name",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "39656462",
+      "name": "包裹",
+      "font_class": "baoguo",
+      "unicode": "e6c8",
+      "unicode_decimal": 59080
+    },
+    {
+      "icon_id": "39656463",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e6c9",
+      "unicode_decimal": 59081
+    },
+    {
+      "icon_id": "39656464",
+      "name": "电池",
+      "font_class": "dianchi",
+      "unicode": "e6ca",
+      "unicode_decimal": 59082
+    },
+    {
+      "icon_id": "39656465",
+      "name": "包裹扫描",
+      "font_class": "baoguosaomiao",
+      "unicode": "e6cb",
+      "unicode_decimal": 59083
+    },
+    {
+      "icon_id": "39656466",
+      "name": "图片",
+      "font_class": "tupian",
+      "unicode": "e6cc",
+      "unicode_decimal": 59084
+    },
+    {
+      "icon_id": "39656467",
+      "name": "数据",
+      "font_class": "shuju",
+      "unicode": "e6cd",
+      "unicode_decimal": 59085
+    },
+    {
+      "icon_id": "39656468",
+      "name": "书本",
+      "font_class": "shuben",
+      "unicode": "e6ce",
+      "unicode_decimal": 59086
+    }
+  ]
+}
