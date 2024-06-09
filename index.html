@@ -8,34 +8,14 @@
     <title>Source 百宝箱</title>
     <!-- 导入阿里的图标样式文件 -->
     <link rel="icon" type="image/x-icon" href=""/>
-    <link rel="stylesheet" href="iconfont.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="toolkit.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/toolkit.css">
+    <link rel="stylesheet" href="css/bottom.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="fontawesome/css/all.css">
-    <link rel="stylesheet" href="bottom.css">
     <!--    <script src="iconfont.js"></script>-->
     <style>
-        /*.content {*/
-        /*    display: flex;*/
-        /*    !* 使用flex布局 *!*/
-        /*    !* justify-content: space-between; *!*/
-        /*    !* 左右排列，并将左右两边的空间平均分配 *!*/
-        /*    !* align-items: flex-start; *!*/
-        /*    !* 垂直方向上顶部对齐 *!*/
-        /*}*/
-
-        /*.lower-right-corner {*/
-        /*    position: fixed;*/
-        /*    right: 10px;*/
-        /*    bottom: 10px;*/
-        /*}*/
-
-        /*#main-content {*/
-        /*    position: relative;*/
-        /*    left: 125px;*/
-        /*    margin: auto;*/
-        /*}*/
     </style>
 </head>
 
@@ -692,6 +672,19 @@
                                 </a>
                             </div> <!-- mk-item -->
 
+                            <div class="mk-item">
+                                <a href="tools/more/vsbm" target="_blank">
+                                    <article class="mk-color-item color4">
+                                        <div class="item-logo">
+                                            <i class="fas fa-bug" aria-hidden="true"></i>
+                                        </div>
+                                        <h3>毒蘑菇测试</h3>
+                                        <p>测测你的显卡性能</p>
+                                        <i class="light"></i>
+                                    </article>
+                                </a>
+                            </div> <!-- mk-item -->
+
                         </div> <!-- mk-item-box -->
                     </section>
                 </div>
@@ -708,35 +701,13 @@
 
     </div>
     </div>
-    <script src="jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="bottom.js"></script>
+    <script src="js/bottom.js"></script>
     <script>
         $(function () {
             $('#option_0').trigger('click');
         })
-        // document.addEventListener("DOMContentLoaded", function () {
-        //     var options = document.querySelectorAll('.option');
-        //     options.forEach(function (option) {
-        //         option.addEventListener('click', function () {
-        //             var contentId = option.getAttribute('data-content');
-        //             // 根据不同的 contentId 更新右侧主界面的内容
-        //             updateMainContent(contentId);
-        //         });
-        //     });
-        //
-        //     function updateMainContent(contentId) {
-        //         // 获取右侧主界面的容器
-        //         var mainContent = document.getElementById('main-content');
-        //         // 根据 contentId 更新主界面内容
-        //         if (contentId === 'content1') {
-        //             mainContent.innerHTML = '<h2>内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1v</h2><p>这是内容1的详细信息。</p>';
-        //         } else if (contentId === 'content2') {
-        //             mainContent.innerHTML = '<h2>内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2</h2><p>这是内容2的详细信息。</p>';
-        //         }
-        //         // 可以根据需要进一步扩展
-        //     }
-        // });
 
         function show_div(curthis) {
             var id = curthis.attr('id');
